@@ -8,13 +8,13 @@ export const AboutUs = () => {
         <div className="overlap">
           <div className="overlap-group">
             <img className="ellipse" alt="Ellipse" src="ellipse-2.svg" />
-            <img className="image" alt="Image" src="image-10.png" />
+            <img className="image" alt="Image" src="/image 10.png" />
             <div className="col-md">
               <div className="headline">About Us</div>
             </div>
-            <img className="img" alt="Ellipse" src="image.svg" />
+            <img className="img" alt="Ellipse" src="/image.svg" />
             <p className="h-headline">
-              Dentist Lester  R. Limbos established the Limbos Dental Cosmetics and Implant Center Dental Clinic by
+              Dentist Lester R. Limbos established the Limbos Dental Cosmetics and Implant Center Dental Clinic by
               himself in 2008, with its first location in 120 Maginhawa Street, Teachers Village, Diliman Quezon City.
               Currently, he is the head and the sole dentist present in the clinic. Dr. Limbos is assisted by three
               people, one secretary and two dental assistants, in order to facilitate the whole clinic
@@ -27,8 +27,8 @@ export const AboutUs = () => {
                       <p className="text-wrapper">Limbos Dental Cosmetics and Implant Center</p>
                       <div className="p-s-card-paragraph">
                         <p className="we-are-commited-to">
-                          We are commited to give you the best smile you deserve! If you have been feeling less
-                          than&nbsp;&nbsp;happy with your smile and want to do something about it, look no further!
+                          We are committed to give you the best smile you deserve! If you have been feeling less
+                          than happy with your smile and want to do something about it, look no further!
                           LIMBOS DENTAL COSMETICS AND IMPLANT CENTER has the tools to give you your best smile!
                         </p>
                       </div>
@@ -70,28 +70,26 @@ export const AboutUs = () => {
               <img
                 className="element"
                 alt="Element"
-                src="21317736-166466953903791-3719905096119854242-n-removebg-preview-2.png"
+                src="/logo.png"
               />
               <div className="collapse-navbar">
                 <div className="navbar-nav">
                   <div className="li">
-                    <div className="a">
-                      <div className="link">Home</div>
-                    </div>
+                    <a href="/" className="a">Home</a>
                   </div>
                   <div className="a-wrapper">
                     <div className="link-wrapper">
-                      <div className="link-2">Services</div>
+                      <a href="/services" className="link-2">Services</a>
                     </div>
                   </div>
                   <div className="li-2">
                     <div className="a-2">
-                      <div className="link-3">About Us</div>
+                      <a href="/aboutus" className="link-3">About Us</a>
                     </div>
                   </div>
                   <div className="li-3">
                     <div className="a-3">
-                      <div className="link-2">Contact</div>
+                      <a href="/contact" className="link-2">Contact</a>
                     </div>
                   </div>
                 </div>
@@ -105,8 +103,8 @@ export const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <img className="image-2" alt="Image" src="image-8.png" />
-            <img className="image-3" alt="Image" src="image-11.png" />
+            <img className="image-2" alt="Image" src="/image 8.png" />
+            <img className="image-3" alt="Image" src="/image 11.png" />
             <div className="headline-wrapper">
               <div className="headline">Our Clients</div>
             </div>

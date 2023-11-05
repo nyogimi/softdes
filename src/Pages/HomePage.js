@@ -6,8 +6,6 @@ export const HomePage = () => {
     <div className="home-page">
       <div className="overlap-group-wrapper">
         <div className="overlap-group">
-          <img className="ellipse" alt="Ellipse" src="ellipse.svg" />
-          <img className="img" alt="Ellipse" src="ellipse-2.svg" />
           <div className="container">
             <div className="row">
               <div className="col-md">
@@ -23,7 +21,7 @@ export const HomePage = () => {
                         <div className="select">
                           <div className="option">
                             <div className="dropdown">Please Select</div>
-                            <img className="vector" alt="Vector" src="image.svg" />
+                            <img className="vector" alt="Vector" src="vector.svg" />
                           </div>
                         </div>
                       </div>
@@ -34,7 +32,7 @@ export const HomePage = () => {
                         <div className="select">
                           <div className="option">
                             <div className="dropdown">Please Select</div>
-                            <img className="vector" alt="Vector" src="vector-2.svg" />
+                            <img className="vector" alt="Vector" src="vector.svg" />
                           </div>
                         </div>
                       </div>
@@ -55,7 +53,7 @@ export const HomePage = () => {
                       <div className="custom-select">
                         <div className="select">
                           <div className="option">
-                            <img className="vector" alt="Vector" src="vector-3.svg" />
+                            <img className="vector" alt="Vector" src="vector.svg" />
                             <div className="div">Please Select</div>
                           </div>
                         </div>
@@ -73,28 +71,26 @@ export const HomePage = () => {
             <img
               className="element"
               alt="Element"
-              src="./public/logo.png"
+              src="/logo.png"
             />
             <div className="collapse-navbar">
               <div className="navbar-nav">
                 <div className="li">
-                  <div className="a">
-                    <img className="link" alt="Link" src="link.png" />
-                  </div>
+                  <a href="/" className="a">Home</a>
                 </div>
                 <div className="a-wrapper">
                   <div className="link-wrapper">
-                    <div className="link-2">Services</div>
+                    <a href="/services" className="link-2">Services</a>
                   </div>
                 </div>
                 <div className="div-wrapper">
                   <div className="a-2">
-                    <div className="link-2">About Us</div>
+                    <a href="/aboutus" className="link-2">About Us</a>
                   </div>
                 </div>
                 <div className="li-2">
                   <div className="a-3">
-                    <div className="link-2">Contact</div>
+                    <a href="/contact" className="link-2">Contact</a>
                   </div>
                 </div>
               </div>
@@ -102,7 +98,7 @@ export const HomePage = () => {
                 <div className="nav-item">
                   <div className="button-btn-primary-2">
                     <div className="btn-text-2">Book Appointment</div>
-                    <img className="icn-arrow-right-icn" alt="Icn arrow right icn" src="icn-arrow-right-icn-xs.svg" />
+                    <img className="icn-arrow-right-icn" alt="Icn arrow right icn" src="/icn arrow-right .icn-xs.svg" />
                   </div>
                 </div>
               </div>

@@ -9,7 +9,7 @@ export const LoginPage = () => {
           <img
             className="element"
             alt="Element"
-            src="21317736-166466953903791-3719905096119854242-n-removebg-preview-1.png"
+            src="/logo.png"
           />
           <div className="h">Welcome!</div>
           <div className="form-control">Email</div>

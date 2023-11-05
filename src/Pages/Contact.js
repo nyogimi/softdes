@@ -8,12 +8,11 @@ export const Contact = () => {
         <div className="overlap">
           <div className="overlap-group">
             <div className="overlap-2">
-              <img className="ellipse" alt="Ellipse" src="image.svg" />
               <p className="quezon-city-clinic">
                 Quezon City Clinic <br />
                 2nd Floor, #120 St&nbsp;&nbsp;Maginhawa St.,
                 <br />
-                Teachers Village. Quezon Cty <br />
+                Teachers Village. Quezon City <br />
                 <br />
                 Tue-Sun: 2:00 PM - 9:00&nbsp;&nbsp;PM
                 <br />
@@ -27,35 +26,35 @@ export const Contact = () => {
                 <img
                   className="element"
                   alt="Element"
-                  src="21317736-166466953903791-3719905096119854242-n-removebg-preview-2.png"
+                  src="/logo.png"
                 />
                 <div className="collapse-navbar">
                   <div className="navbar-nav">
                     <div className="li">
                       <div className="a">
-                        <div className="link">Home</div>
+                        <a href="/" className="link">Home</a>
                       </div>
                     </div>
                     <div className="a-wrapper">
                       <div className="link-wrapper">
-                        <div className="text-wrapper">Services</div>
+                        <a href="/services" className="text-wrapper">Services</a>
                       </div>
                     </div>
                     <div className="div-wrapper">
                       <div className="a-2">
-                        <div className="text-wrapper">About Us</div>
+                        <a href="/aboutus" className="text-wrapper">About Us</a>
                       </div>
                     </div>
                     <div className="li-2">
                       <div className="a-3">
-                        <div className="link-2">Contact</div>
+                        <a href="/contact" className="link-2">Contact</a>
                       </div>
                     </div>
                   </div>
                   <div className="nav-item-wrapper">
                     <div className="nav-item">
                       <div className="button-btn-primary">
-                        <div className="btn-text">Book Appointment</div>
+                        <a href="/book-appointment" className="btn-text">Book Appointment</a>
                         <img
                           className="icn-arrow-right-icn"
                           alt="Icn arrow right icn"
@@ -66,6 +65,7 @@ export const Contact = () => {
                   </div>
                 </div>
               </div>
+
               <div className="headline">Dr. Lester R. Limbos</div>
               <p className="h-headline">
                 Manila Clinic
@@ -80,10 +80,9 @@ export const Contact = () => {
               </p>
             </div>
           </div>
-          <img className="image" alt="Image" src="image-15.png" />
+          <img className="image" alt="Image" src="/image 15.png" />
         </div>
         <div className="overlap-3">
-          <img className="ellipse-2" alt="Ellipse" src="ellipse-2.svg" />
           <p className="p">
             St. Luke’s Medical Center
             <br />
@@ -94,7 +93,7 @@ export const Contact = () => {
             <br />
             Mobile No: +63 917 828 0047
           </p>
-          <img className="image-2" alt="Image" src="image-16.png" />
+          <img className="image-2" alt="Image" src="/image 16.png" />
           <div className="content">
             <div className="columns">
               <div className="column">
@@ -102,8 +101,8 @@ export const Contact = () => {
                   <div className="frame">
                     <p className="text-wrapper-2">Limbos Dental Cosmetics and Implant Center</p>
                     <div className="p-s-card-paragraph">
-                      <p className="we-are-commited-to">
-                        We are commited to give you the best smile you deserve! If you have been feeling less
+                      <p className="we-are-committed-to">
+                        We are committed to give you the best smile you deserve! If you have been feeling less
                         than&nbsp;&nbsp;happy with your smile and want to do something about it, look no further! LIMBOS
                         DENTAL COSMETICS AND IMPLANT CENTER has the tools to give you your best smile!
                       </p>

@@ -73,7 +73,7 @@ export const HomePage = () => {
             <img
               className="element"
               alt="Element"
-              src="21317736-166466953903791-3719905096119854242-n-removebg-preview-2.png"
+              src="./public/logo.png"
             />
             <div className="collapse-navbar">
               <div className="navbar-nav">

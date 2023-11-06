@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 
 export const HomePage = () => {
@@ -16,52 +17,53 @@ export const HomePage = () => {
                   <div className="h">Book Appointment</div>
                   <div className="card-content">
                     <div className="form-group-custom">
-                      <div className="form-control">Location</div>
+                      <label className="form-control">Location</label>
+                      <select className="custom-select">
+                        <option value="">Please Select</option>
+                        <option value="Manila Clinic">Manila Clinic</option>
+                        <option value="Quezon City Clinic">Quezon City Clinic</option>
+                        <option value="St. Luke’s Medical Center">St. Luke’s Medical Center</option>
+                      </select>
+                    </div>
+                    <div className="form-group-custom">
+                      <label className="form-control">Service</label>
+                      <select className="custom-select">
+                        <option value="">Please Select</option>
+                        <option value="TMJ (Temporomandibular Joints)">TMJ (Temporomandibular Joints)</option>
+                        <option value="Orthodontics">Orthodontics</option>
+                        <option value="Functional Jaw Orthopedics">Functional Jaw Orthopedics</option>
+                        <option value="Prosthodontics">Prosthodontics</option>
+                        <option value="Cosmetics">Cosmetics</option>
+                        <option value="Surgery">Surgery</option>
+                        <option value="Implant Dentistry">Implant Dentistry</option>
+                      </select>
+                    </div>
+                    <div className="form-group-custom">
+                      <label className="form-control">Date</label>
                       <div className="custom-select">
-                        <div className="select">
-                          <div className="option">
-                            <div className="dropdown">Please Select</div>
-                            <img className="vector" alt="Vector" src="vector.svg" />
-                          </div>
-                        </div>
+                        <input type="date" className="date-input" />
                       </div>
                     </div>
                     <div className="form-group-custom">
-                      <div className="form-control">Service</div>
-                      <div className="custom-select">
-                        <div className="select">
-                          <div className="option">
-                            <div className="dropdown">Please Select</div>
-                            <img className="vector" alt="Vector" src="vector.svg" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-group-custom">
-                      <div className="form-control">Date</div>
-                      <div className="custom-select">
-                        <div className="select">
-                          <div className="option">
-                            <img className="vector" alt="Vector" src="vector.svg" />
-                            <div className="text-wrapper">Please Select</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="form-group-custom">
-                      <div className="form-control">Time</div>
-                      <div className="custom-select">
-                        <div className="select">
-                          <div className="option">
-                            <img className="vector" alt="Vector" src="vector.svg" />
-                            <div className="div">Please Select</div>
-                          </div>
-                        </div>
-                      </div>
+                      <label className="form-control">Time</label>
+                      <select className="custom-select">
+                        <option value="">Please Select</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="01:00 PM">01:00 PM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                        <option value="05:00 PM">05:00 PM</option>
+                      </select>
                     </div>
                   </div>
                   <div className="button-btn-primary">
-                    <div className="btn-text">Book Appointment</div>
+                    <Link to="/summary" className="btn-text">
+                      Book Appointment
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -76,29 +78,43 @@ export const HomePage = () => {
             <div className="collapse-navbar">
               <div className="navbar-nav">
                 <div className="li">
-                  <a href="/" className="a">Home</a>
+                  <Link to="/" className="a">
+                    Home
+                  </Link>
                 </div>
                 <div className="a-wrapper">
                   <div className="link-wrapper">
-                    <a href="/services" className="link-2">Services</a>
+                    <Link to="/services" className="text-wrapper">
+                      Services
+                    </Link>
                   </div>
                 </div>
                 <div className="div-wrapper">
                   <div className="a-2">
-                    <a href="/aboutus" className="link-2">About Us</a>
+                    <Link to="/aboutus" className="text-wrapper">
+                      About Us
+                    </Link>
                   </div>
                 </div>
                 <div className="li-2">
                   <div className="a-3">
-                    <a href="/contact" className="link-2">Contact</a>
+                    <Link to="/contact" className="link-2">
+                      Contact
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="nav-item-wrapper">
                 <div className="nav-item">
                   <div className="button-btn-primary-2">
-                    <div className="btn-text-2">Book Appointment</div>
-                    <img className="icn-arrow-right-icn" alt="Icn arrow right icn" src="/icn arrow-right .icn-xs.svg" />
+                    <Link to="/summary" className="btn-text-2">
+                      Book Appointment
+                    </Link>
+                    <img
+                      className="icn-arrow-right-icn"
+                      alt="Icn arrow right icn"
+                      src="/icn arrow-right .icn-xs.svg"
+                    />
                   </div>
                 </div>
               </div>

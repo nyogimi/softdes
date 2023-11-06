@@ -5,6 +5,7 @@ import { Services } from "./Pages/Services";
 import { AboutUs } from "./Pages/AboutUs";
 import { Contact } from "./Pages/Contact";
 import { LoginPage } from "./Pages/LoginPage";
+import { Summary } from "./Pages/Summary";
 
 
 function App() {
@@ -12,11 +13,12 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage/>}/>
+          <Route path="/" element={<LoginPage/>}/>
+          <Route path="/homepage" element={<HomePage/>}/>
           <Route path="/services" element={<Services/>}/>
           <Route path="/aboutus" element={<AboutUs/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="/loginpage" element={<LoginPage/>}/>
+          <Route path="/summary" element={<Summary/>}/>
         </Routes>
       </div>
     </Router> 

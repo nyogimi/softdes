@@ -43,12 +43,12 @@
     font-size: var(--h-3-font-size);
     font-style: var(--h-3-font-style);
     font-weight: var(--h-3-font-weight);
-    left: 117px;
+    left: 129px;
     letter-spacing: var(--h-3-letter-spacing);
     line-height: var(--h-3-line-height);
     position: absolute;
     text-align: center;
-    top: 228px;
+    top: 230px;
     white-space: nowrap;
   }
   
@@ -151,8 +151,6 @@
     border-color: #e6e6e6;
     border-radius: 5px;
     height: 50px;
-    left: -3px;
-    position: relative;
-    top: 3px;
+
   }
   

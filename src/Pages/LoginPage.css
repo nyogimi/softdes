@@ -129,7 +129,7 @@
     border: 1px solid;
     border-color: #e6e6e6;
     border-radius: 5px;
-    height: 50px;
+    height: 5px;
     left: 58px;
     position: absolute;
     top: 322px;
@@ -154,3 +154,20 @@
 
   }
   
+  .login-page .form-control label {
+    color: var(--secondary-color-2);
+    font-family: var(--h-6-font-family);
+    font-size: var(--h-6-font-size);
+    font-style: var(--h-6-font-style);
+    font-weight: var(--h-6-font-weight);
+    margin-bottom: 5px; /* Add some space between the label and the input field */
+  }
+  
+  .login-page .text-wrapper label {
+    color: var(--secondary-color-2);
+    font-family: var(--h-6-font-family);
+    font-size: var(--h-6-font-size);
+    font-style: var(--h-6-font-style);
+    font-weight: var(--h-6-font-weight);
+    margin-bottom: 5px; /* Add some space between the label and the input field */
+  }

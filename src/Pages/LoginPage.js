@@ -21,12 +21,20 @@ export const LoginPage = () => {
               <div className="btn-text">Login</div>
             </Link>
           </div>
-          <div className="form-control-input" />
+          <div className="form-control">
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="form-control-input">
+            <input type="text" id="email" name="email" />
+          </div>
+          <div className="text-wrapper">
+            <label htmlFor="password">Password</label>
+          </div>
           <div className="input-form-control-wrapper">
-            <div className="input-form-control" />
+            <input type="password" id="password" name="password" />
           </div>
         </div>
       </div>
     </div>
-  );
+  ); 
 };

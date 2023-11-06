@@ -6,6 +6,7 @@ import { AboutUs } from "./Pages/AboutUs";
 import { Contact } from "./Pages/Contact";
 import { LoginPage } from "./Pages/LoginPage";
 import { Summary } from "./Pages/Summary";
+import { SignUpPage } from "./Pages/SignUpPage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/aboutus" element={<AboutUs/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/summary" element={<Summary/>}/>
+          <Route path="/signup" element={<SignUpPage/>}/>
         </Routes>
       </div>
     </Router> 

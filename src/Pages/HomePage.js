@@ -65,6 +65,11 @@ export const HomePage = () => {
                       Book Appointment
                     </Link>
                   </div>
+                  <div className="button-btn-secondary">
+                    <Link to="/signup" className="btn-text">
+                      Sign Up
+                    </Link>
+                    </div>
                 </div>
               </div>
             </div>

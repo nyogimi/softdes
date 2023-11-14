@@ -97,17 +97,6 @@ export const HomePage = () => {
                       Book Appointment
                     </button>
                   </div>
-                  {/* Dialog Box */}
-                  {showDialog && (
-                    <div className="dialog">
-                      <p>Appointment Details:</p>
-                      <p>Location: {selectedLocation}</p>
-                      <p>Service: {selectedService}</p>
-                      <p>Date: {selectedDate}</p>
-                      <p>Time: {selectedTime}</p>
-                      <button onClick={() => setShowDialog(false)}>Close</button>
-                    </div>
-                  )}
                 </div>
               </div>
             </div>

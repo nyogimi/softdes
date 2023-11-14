@@ -43,8 +43,23 @@ export const LoginPage = () => {
               <div className="btn-text">Login</div>
             </Link>
           </div>
+<<<<<<< HEAD
+=======
+          <div className="form-control">
+            <label htmlFor="email">Email</label>
+          </div>
+          <div className="form-control-input">
+            <input type="text" id="email" name="email" />
+          </div>
+          <div className="text-wrapper">
+            <label htmlFor="password">Password</label>
+          </div>
+          <div className="input-form-control-wrapper">
+            <input type="password" id="password" name="password" />
+          </div>
+>>>>>>> 64b3d02c3e5e0b9bb1c62753ef2b7cbb1fac7cc4
         </div>
       </div>
     </div>
-  );
+  ); 
 };

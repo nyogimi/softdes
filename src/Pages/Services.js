@@ -8,8 +8,6 @@ export const Services = () => {
     <div className="services">
       <div className="div">
         <div className="overlap-group">
-          <img className="ellipse" alt="Ellipse" src="ellipse.svg" />
-          <img className="img" alt="Ellipse" src="image.svg" />
           <div className="dark-theme">
             <img
               className="element"

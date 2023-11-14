@@ -21,7 +21,7 @@ export const Contact = () => {
               </p>
             </div>
             <div className="overlap-group-2">
-              <img className="img" alt="Ellipse" src="ellipse.svg" />
+            <img className="image-2" alt="Image0" src="/image 16.png" />
               <div className="dark-theme">
                 <img
                   className="element"
@@ -80,7 +80,7 @@ export const Contact = () => {
               </p>
             </div>
           </div>
-          <img className="image" alt="Image" src="/image 15.png" />
+          <img className="image" alt="Image1" src="/image 15.png" />
         </div>
         <div className="overlap-3">
           <p className="p">
@@ -93,7 +93,7 @@ export const Contact = () => {
             <br />
             Mobile No: +63 917 828 0047
           </p>
-          <img className="image-2" alt="Image" src="/image 16.png" />
+          <img className="image-2" alt="Image2" src="/image 16.png" />
           <div className="content">
             <div className="columns">
               <div className="column">
@@ -133,7 +133,7 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-            <img className="line" alt="Line" src="line-90.svg" />
+            <img className="line" alt="Line1" src="line-90.svg" />
             <div className="bottom">
               <p className="element-all-rights">© 2023, All Rights Reserved</p>
             </div>

@@ -5,7 +5,7 @@ import { Services } from "./Pages/Services";
 import { AboutUs } from "./Pages/AboutUs";
 import { Contact } from "./Pages/Contact";
 import { LoginPage } from "./Pages/LoginPage";
-import { Summary } from "./Pages/Summary";
+
 
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
           <Route path="/services" element={<Services/>}/>
           <Route path="/aboutus" element={<AboutUs/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="/summary" element={<Summary/>}/>
         </Routes>
       </div>
     </Router> 

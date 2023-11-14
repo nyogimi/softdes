@@ -38,14 +38,6 @@
     width: 835px;
   }
   
-  .contact .ellipse {
-    height: 986px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 530px;
-  }
-  
   .contact .quezon-city-clinic {
     color: var(--dark-background-color);
     font-family: "Outfit-Regular", Helvetica;
@@ -56,24 +48,8 @@
     line-height: 80px;
     position: absolute;
     text-align: center;
-    top: 430px;
+    top: 300px;
     width: 816px;
-  }
-  
-  .contact .overlap-group-2 {
-    height: 1188px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1920px;
-  }
-  
-  .contact .img {
-    height: 942px;
-    left: 1063px;
-    position: absolute;
-    top: 21px;
-    width: 857px;
   }
   
   .contact .dark-theme {
@@ -141,7 +117,7 @@
     line-height: var(--h-3-line-height);
     position: absolute;
     text-align: right;
-    top: 0;
+    top: 10000;
     white-space: nowrap;
   }
   
@@ -283,7 +259,7 @@
     line-height: 80px;
     position: absolute;
     text-align: center;
-    top: 639px;
+    top: 499px;
     width: 998px;
   }
   
@@ -331,7 +307,7 @@
     left: 169px;
     object-fit: cover;
     position: absolute;
-    top: 1px;
+    top: 600px;
     width: 633px;
   }
   

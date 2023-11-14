@@ -1,8 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./HomePage.css";
 
 export const HomePage = () => {
+  const [selectedLocation, setSelectedLocation] = useState("");
+  const [selectedService, setSelectedService] = useState("");
+  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [showDialog, setShowDialog] = useState(false); // State to control dialog visibility
+
+  const handleLocationChange = (event) => {
+    setSelectedLocation(event.target.value);
+  };
+
+  const handleServiceChange = (event) => {
+    setSelectedService(event.target.value);
+  };
+
+  const handleDateChange = (event) => {
+    setSelectedDate(event.target.value);
+  };
+
+  const handleTimeChange = (event) => {
+    setSelectedTime(event.target.value);
+  };
+
+  const handleAppointmentBooking = () => {
+    // Logic to handle the appointment details, e.g., store in state or context
+    // For simplicity, we'll just log the selected details here
+    console.log("Location:", selectedLocation);
+    console.log("Service:", selectedService);
+    console.log("Date:", selectedDate);
+    console.log("Time:", selectedTime);
+    setShowDialog(true);
+  };
+
   return (
     <div className="home-page">
       <div className="overlap-group-wrapper">
@@ -18,7 +50,7 @@ export const HomePage = () => {
                   <div className="card-content">
                     <div className="form-group-custom">
                       <label className="form-control">Location</label>
-                      <select className="custom-select">
+                      <select className="custom-select" onChange={handleLocationChange}>
                         <option value="">Please Select</option>
                         <option value="Manila Clinic">Manila Clinic</option>
                         <option value="Quezon City Clinic">Quezon City Clinic</option>
@@ -27,9 +59,9 @@ export const HomePage = () => {
                     </div>
                     <div className="form-group-custom">
                       <label className="form-control">Service</label>
-                      <select className="custom-select">
+                      <select className="custom-select" onChange={handleServiceChange}>
                         <option value="">Please Select</option>
-                        <option value="TMJ (Temporomandibular Joints)">TMJ (Temporomandibular Joints)</option>
+                        <option value="TMJ (Temporomandibular Joints)">TMJ Temporomandibular Joints</option>
                         <option value="Orthodontics">Orthodontics</option>
                         <option value="Functional Jaw Orthopedics">Functional Jaw Orthopedics</option>
                         <option value="Prosthodontics">Prosthodontics</option>
@@ -41,12 +73,12 @@ export const HomePage = () => {
                     <div className="form-group-custom">
                       <label className="form-control">Date</label>
                       <div className="custom-select">
-                        <input type="date" className="date-input" />
+                        <input type="date" className="date-input" onChange={handleDateChange} />
                       </div>
                     </div>
                     <div className="form-group-custom">
                       <label className="form-control">Time</label>
-                      <select className="custom-select">
+                      <select className="custom-select" onChange={handleTimeChange}>
                         <option value="">Please Select</option>
                         <option value="09:00 AM">09:00 AM</option>
                         <option value="10:00 AM">10:00 AM</option>
@@ -61,20 +93,27 @@ export const HomePage = () => {
                     </div>
                   </div>
                   <div className="button-btn-primary">
-                    <Link to="/summary" className="btn-text">
+                    <button onClick={handleAppointmentBooking} className="btn-text">
                       Book Appointment
-                    </Link>
+                    </button>
                   </div>
+                  {/* Dialog Box */}
+                  {showDialog && (
+                    <div className="dialog">
+                      <p>Appointment Details:</p>
+                      <p>Location: {selectedLocation}</p>
+                      <p>Service: {selectedService}</p>
+                      <p>Date: {selectedDate}</p>
+                      <p>Time: {selectedTime}</p>
+                      <button onClick={() => setShowDialog(false)}>Close</button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           </div>
           <div className="dark-theme">
-            <img
-              className="element"
-              alt="Element"
-              src="/logo.png"
-            />
+            <img className="element" alt="Element" src="/logo.png" />
             <div className="collapse-navbar">
               <div className="navbar-nav">
                 <div className="li">
@@ -107,14 +146,10 @@ export const HomePage = () => {
               <div className="nav-item-wrapper">
                 <div className="nav-item">
                   <div className="button-btn-primary-2">
-                    <Link to="/summary" className="btn-text-2">
+                    <Link to="/homepage" className="btn-text-2">
                       Book Appointment
                     </Link>
-                    <img
-                      className="icn-arrow-right-icn"
-                      alt="Icn arrow right icn"
-                      src="/icn arrow-right .icn-xs.svg"
-                    />
+                    <img className="icn-arrow-right-icn" alt="Icn arrow right icn" src="/icn arrow-right .icn-xs.svg" />
                   </div>
                 </div>
               </div>

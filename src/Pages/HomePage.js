@@ -7,7 +7,7 @@ export const HomePage = () => {
   const [selectedService, setSelectedService] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
-  const [showDialog, setShowDialog] = useState(false); // State to control dialog visibility
+  const [showDialog, setShowDialog] = useState(false);
 
   const handleLocationChange = (event) => {
     setSelectedLocation(event.target.value);
@@ -33,6 +33,10 @@ export const HomePage = () => {
     console.log("Date:", selectedDate);
     console.log("Time:", selectedTime);
     setShowDialog(true);
+  };
+
+  const handleCloseDialog = () => {
+    setShowDialog(false);
   };
 
   return (
@@ -97,6 +101,17 @@ export const HomePage = () => {
                       Book Appointment
                     </button>
                   </div>
+                  {/* Dialog Box */}
+                  {showDialog && (
+                    <div className="dialog">
+                      <h3>Appointment Details</h3>
+                      <p>Location: {selectedLocation}</p>
+                      <p>Service: {selectedService}</p>
+                      <p>Date: {selectedDate}</p>
+                      <p>Time: {selectedTime}</p>
+                      <button onClick={handleCloseDialog}>Close</button>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

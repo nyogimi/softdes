@@ -18,11 +18,7 @@ export const LoginPage = () => {
     <div className="login-page">
       <div className="light-theme-wrapper">
         <div className="light-theme">
-          <img
-            className="element"
-            alt="Element"
-            src="/logo.png"
-          />
+          <img className="element" alt="Element" src="/logo.png" />
           <div className="h">Welcome!</div>
           <div className="form-control">Email</div>
           <input
@@ -39,24 +35,12 @@ export const LoginPage = () => {
             onChange={handlePasswordChange}
           />
           <div className="form-group-custom">
-            <Link to="/homepage" className="button-btn-primary">
+            <Link to="homepage" className="button-btn-primary">
               <div className="btn-text">Login</div>
             </Link>
-          </div>
-          <div className="form-control">
-            <label htmlFor="email">Email</label>
-          </div>
-          <div className="form-control-input">
-            <input type="text" id="email" name="email" />
-          </div>
-          <div className="text-wrapper">
-            <label htmlFor="password">Password</label>
-          </div>
-          <div className="input-form-control-wrapper">
-            <input type="password" id="password" name="password" />
           </div>
         </div>
       </div>
     </div>
-  ); 
+  );
 };
